@@ -27,13 +27,13 @@ client_secret: Your API Client Secret from Microsoft Entra
 
 tenant_id: Your Microsoft Entra Tenant ID
 
-allowed_domains: Please set which email domains you wish to be allows to login to your AVideo installation. You can comma separate entries if you'd like to add more than one (e.g. avideo.com,avideo.co.uk)
+allowed_domains: Please set which email domains you wish to be allowed to login to your AVideo installation. You can comma separate entries if you'd like to add more than one (e.g. avideo.com,avideo.co.uk)
 
-If you wish to make this the only available login option, you can enable the 'disableNativeSignIn' option in the 'CustomizeUser' plugin of AVideo,. however make sure that this plugin is working and one of your Entra users is an Admin before you do this, otherwise you will not be able to login to your installation again without enabling the Native Sign In method manually in the AVideo mySQL database. 
+If you wish to make this the only available login option, you can enable the 'disableNativeSignIn' option in the 'CustomizeUser' plugin of AVideo, however make sure that this plugin is working and one of your Entra users is an Admin before you do this, otherwise you will not be able to login to your installation again without enabling the Native Sign In method manually in the AVideo mySQL database. 
 
 # Creating a 'Sign in with Microsoft' button on the login page.
 
-As I did not want to mess with the code of the main plugin, this plugin uses its own login handler, therefore it won't create a 'Sign in with Microsoft' button on the main login page like the other AVideo created Login plugins do when they're enabled. Please feel free to use the HTML code below to create your own login button (replacing avideo.com with your URL), i suggest in the 'messageToAppearBelowLoginBox' setting of the 'CustomizeUser' plugin of AVideo.
+As I did not want to mess with the code of the main app, this plugin uses its own login handler, therefore it won't create a 'Sign in with Microsoft' button on the main login page like the other AVideo created Login plugins do when they're enabled. Please feel free to use the HTML code below to create your own login button (replacing avideo.com with your URL), i suggest in the 'messageToAppearBelowLoginBox' setting of the 'CustomizeUser' plugin of AVideo.
 
 
 ```html
