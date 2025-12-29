@@ -33,7 +33,7 @@ If you wish to make this the only available login option, you can enable the 'di
 
 # Creating a 'Sign in with Microsoft' button on the login page.
 
-As I did not want to mess with the code of the main app, this plugin uses its own login handler, therefore it won't create a 'Sign in with Microsoft' button on the main login page like the other AVideo created Login plugins do when they're enabled. Please feel free to use the HTML code below to create your own login button (replacing avideo.com with your URL), i suggest in the 'messageToAppearBelowLoginBox' setting of the 'CustomizeUser' plugin of AVideo.
+As I did not want to mess with the code of the main app, this plugin uses its own login handler, therefore it won't create a 'Sign in with Microsoft' button on the main login page like the other AVideo created Login plugins do when they're enabled. Please feel free to use the HTML code below to create your own login button (replacing avideo.com with your URL), i suggest in the 'messageToAppearBelowLoginBox' setting of the 'CustomizeUser' plugin of AVideo. This code also includes some JavaScript to pass on a redirect URL through Entra login, so if you have shared a video link to somebody and your site requires login by default, the video should still load once login has completed.
 
 
 ```html
